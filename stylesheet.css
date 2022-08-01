@@ -1,43 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
 body {
-  background-color: #EFF7F6;
-  font-family: 'Inconsolata', monospace;
+  background-color: #000000;
+  background-image: url("images/bg.jpg");
+  background-attachment: fixed;
+  background-size: 900p 400p;
+  font-family: 'Ubuntu Mono', monospace;
   font-weight: 400;
-  color: #000000;
+  color: #FFB000;
 }
 
 h1 {
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Ubuntu Mono', monospace;
   font-weight: 900;
-  color: #ffafcc;
+  font-size: 60px;
+  color: #41FF00;
 }
 
 a {
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Ubuntu Mono', monospace;
   font-weight: 500;
-  color: #ffc8dd;
+  color: #FFB000;
 }
 
 h2 {
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Ubuntu Mono', monospace;
   font-weight: 900;
 }
 
 .icon {
-  color: #BDB2FF;
+  color: #41FF00;
   font-size: 40px;
+  text-align: right;
 }
 
 .button {
-    background-color: #FFFFFC;
+    background-color: #41FF00;
     color: #000000;
     padding: 15px 20px;
     border-radius: 4px;
     margin: 10px 10px 10px 10px;
 }
 a:hover {
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Ubuntu Mono', monospace;
   font-weight: 500;
   color: #7BDFF2;
   text-decoration: none;
@@ -47,26 +52,25 @@ a:hover {
   border-radius: 50%;
 }
 
-.box {
-  color: #1f1e1e;
-  margin: 10px auto;
-  padding: 40px;
-  width: 300px;
+.right-side {
+  text-align: right;
 }
 
 #intro {
-  margin: 40px auto 10px;
-  background-color: #346f6f;
-  border-radius: 10%;
-  text-align: center;
-  color: #7BDFF2;
-  width: 500px;
-  height: 500px;
+  margin-top: 460px;
+  margin-left: 2px;
+  text-align: left;
+  width: 780px;
+  color: #41FF00
 }
 
-@media (max-width: 720px) {
+@media (max-width: 800px) {
   /* For a screen < 720px, this CSS will be read */
+  body {
+    background-size: 800p 300p;
+  }
   #intro {
+    margin-top: 380px;
     width: 400px;
     height: 400px;
   }
@@ -74,7 +78,11 @@ a:hover {
 
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
+  body {
+    background-size: 600p 200p;
+  }
   #intro {
+    margin-top: 340px;
     width: 300px;
     height: 300px;
   }
